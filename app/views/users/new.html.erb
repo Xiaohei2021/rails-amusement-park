@@ -1,0 +1,14 @@
+<h1>Greetings, Potential Amuserment park member~~</h1>
+<h4>Please complete the information below to sign up with us!</h4><br>
+
+<%= form_for @user do |nu|%>
+    Name: <%= nu.text_field :name %><br><br>
+    Height(in inches): <%= nu.number_field :height %><br><br>
+    How Happy are you?(1-5 scale): <%= nu.number_field :happiness %><br><br>
+    How nauseous are you? (1-5 scale): <%= nu.number_field :nausea %><br><br>
+    How many dollars are in your pocket?: <%= nu.number_field :tickets %><br><br>
+    Check box if you are a theme park owner<br><br>
+    Password: <%= nu.password_field :password %><br><br>
+    <br>
+    <%= nu.submit "Create User" %>
+<% end %>
